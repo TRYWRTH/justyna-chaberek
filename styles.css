@@ -52,7 +52,27 @@ h2 {
   margin: 28px 0 10px;
 }
 
-h2:first-child { margin-top: 0; }
+details + details { margin-top: 20px; }
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+}
+summary::-webkit-details-marker { display: none; }
+
+summary h2 { display: inline; margin: 0; }
+summary h2::before {
+  content: "+";
+  display: inline-block;
+  width: 2ch;
+  color: var(--faint);
+  font-weight: 400;
+}
+details[open] > summary h2::before { content: "–"; }
+summary:hover h2 { text-decoration: underline; text-underline-offset: 3px; }
+
+details > :not(summary) { margin-top: 10px; }
 
 .brands { color: var(--soft); }
 
