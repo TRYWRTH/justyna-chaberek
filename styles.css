@@ -74,8 +74,6 @@ summary:hover h2 { text-decoration: underline; text-underline-offset: 3px; }
 
 details > :not(summary) { margin-top: 10px; }
 
-.brands { color: var(--soft); }
-
 .archive ul { list-style: none; }
 
 .archive li {
