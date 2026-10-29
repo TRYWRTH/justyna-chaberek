@@ -1,24 +1,19 @@
 # Justyna Chaberek — Portfolio
 
-Portfolio/CV website for Justyna Chaberek, a Polish performer and vocalist working between theatre, live art and video.
+One-page "business card" site for Justyna Chaberek, vocalist: name, vita list, email. White page, IBM Plex Mono.
 
 Live site: connect this repo to Vercel (static site, no build step required).
 
 ## Structure
 
-- `index.html` — page markup
-- `styles.css` — styles, layout, animations
-- `script.js` — work-credit list rendering, scroll progress bar, scroll-reveal, hero parallax
-- `justyna-chaberek-cv.pdf` — downloadable CV, linked from the nav and work/contact sections
+- `index.html` — page markup, including the vita list
+- `styles.css` — styles
+- `justyna-chaberek-cv.pdf` — full CV (not linked; available upon request)
 - `design/` — the original Claude Design handoff bundle (chat transcripts and `.dc.html` prototypes) this site was built from, kept for reference
 
 ## Known placeholders
 
-Carried over from the design phase and not yet resolved:
-
-- The hero and about-section photos are hotlinked from Instagram CDN URLs, which are signed and **will expire**. Replace `src` in `index.html` with locally hosted images when available.
-- All 21 work-credit rows link to `#work` — real event/production URLs haven't been provided yet.
-- The Instagram/YouTube links in the footer point to `#top` — real handles haven't been provided yet.
+- The email `hello@justynachaberek.com` is a placeholder until the real address is confirmed.
 
 ## Local development
 
