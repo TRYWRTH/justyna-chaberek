@@ -1,6 +1,6 @@
 # Justyna Chaberek — Portfolio
 
-One-page "business card" site for Justyna Chaberek, vocalist: name, vita list, email. White page, IBM Plex Mono.
+One-page "business card" site for Justyna Chaberek, vocalist: name, work archive, contact. White page, IBM Plex Mono.
 
 Live site: connect this repo to Vercel (static site, no build step required).
 
@@ -13,7 +13,7 @@ Live site: connect this repo to Vercel (static site, no build step required).
 
 ## Known placeholders
 
-- The email `hello@justynachaberek.com` is a placeholder until the real address is confirmed.
+- The email None currently.
 
 ## Local development
 
