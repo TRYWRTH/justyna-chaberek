@@ -65,6 +65,12 @@ h2:first-child { margin-top: 0; }
 
 .t { color: var(--ink); }
 
+.sample { color: var(--ink); margin-left: 1ch; text-decoration: underline; text-underline-offset: 3px; }
+
+.archive .sub { margin: 2px 0 0 2ch; }
+.archive .sub li { padding: 1px 0; }
+.archive .sub li::before { content: "+ "; color: var(--faint); }
+
 .tour {
   margin: 2px 0 4px 2ch;
   color: var(--faint);
