@@ -22,7 +22,7 @@ a { color: inherit; text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 .card {
-  max-width: 1060px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 48px 24px 40px;
   min-height: 100vh;
@@ -52,14 +52,16 @@ h2 {
   margin-bottom: 16px;
 }
 
-.vita ul { list-style: none; }
-
-.vita li {
+.vita ul {
+  list-style: none;
   display: grid;
-  grid-template-columns: 4ch minmax(0, 1.3fr) minmax(0, 1.4fr) minmax(0, 1.3fr);
-  column-gap: 2.5ch;
-  padding: 1px 0;
+  grid-template-columns: repeat(4, max-content);
+  column-gap: 3ch;
+  row-gap: 2px;
 }
+
+.vita li { display: contents; }
+.vita li span { white-space: nowrap; }
 
 .y { color: var(--faint); }
 .r { color: var(--soft); font-style: italic; font-weight: 300; }
@@ -75,12 +77,16 @@ footer {
 footer a { color: var(--ink); }
 footer p { margin-top: 2px; }
 
-@media (max-width: 720px) {
+@media (max-width: 1060px) {
   .card { padding: 32px 16px; }
   h1 { font-size: 22px; }
+  .vita ul { display: block; }
   .vita li {
+    display: grid;
     grid-template-columns: 4ch minmax(0, 1fr);
+    column-gap: 2.5ch;
     padding: 5px 0;
   }
+  .vita li span { white-space: normal; }
   .r, .v { grid-column: 2; }
 }
