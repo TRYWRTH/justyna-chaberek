@@ -79,11 +79,6 @@ h2:first-child { margin-top: 0; }
   font-weight: 300;
 }
 
-footer {
-  margin-top: 36px;
-  color: var(--soft);
-}
-
 @media (max-width: 720px) {
   .card { padding: 32px 16px; }
   .top { flex-direction: column; gap: 4px; }
